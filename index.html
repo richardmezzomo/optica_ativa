@@ -10,10 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Sora:wght@100;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section id="main-page">
-    <section id="navigation">
+  <header>
+    <p>Óculos prontos em até 30 minutos</p>
+  </header>
+  <section id="main-page">  
+    <div id="navigation">
       <nav>
-        <header><p>Óculos prontos em até 30 minutos</p></header>
         <div class="navigation-mobile">
           <div class="logo">
             <img src="./assets/images/logo.svg" alt="Logo Óptica Ativa">
@@ -38,7 +40,7 @@
         <div class="menu-navigation">
           <div class="btns-menu">
             <div class="open-menu" onclick="closeMenu()">
-              <span>X</span>             
+              <span><img src="./assets/images/close-menu.svg" alt=""></span>             
             </div>
           </div>
           <ul>
@@ -66,9 +68,16 @@
           </div>
         </div>
       </nav>
-    </section>
+    </div>
     <section id="home">
-
+      <div class="wrapper">
+        <h1>
+          ÓCULOS PRONTOS EM ATÉ 30 MINUTOS
+        </h1>
+        <p>
+          Agora, não espere mais dias ou semanas para ter uma visão nítida. Aqui, <span>seus óculos estarão prontos em apenas 30 minutos.</span>
+        </p>
+      </div>
     </section>
   </section>
   <script src="scripts.js"></script>
