@@ -12,3 +12,14 @@ function closeMenu() {
   menuNavigation.classList.remove('open');
   menuNavigation.classList.toggle('show');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  let elem = document.querySelector('.main-carousel');
+  let flkty = new Flickity(elem, {
+    freeScroll: true,
+    contain: false,
+    wrapAround: true,
+    prevNextButtons: false,
+    pageDots: false,
+  });
+});

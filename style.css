@@ -213,7 +213,7 @@ header p {
 #brands .wrapper .header {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 
 #brands .wrapper .header p {
@@ -225,3 +225,21 @@ header p {
   line-height: 130%; /* 2.73rem */
 }
 
+#brands .wrapper .main-carousel {
+  width: 100%; /* Defina o tamanho desejado */
+  margin: 0 auto;
+}
+
+#brands .wrapper .main-carousel .carousel-cell {
+  height: 10rem;
+  padding: 0 1.6rem;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  text-align: center; /* Centraliza o conteúdo de texto */
+}
+
+#brands .wrapper .main-carousel .carousel-cell img {
+  max-width: 100%;
+  height: auto;
+}
