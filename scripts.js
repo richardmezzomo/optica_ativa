@@ -14,8 +14,19 @@ function closeMenu() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  let elem = document.querySelector('.main-carousel');
-  let flkty = new Flickity(elem, {
+  var elem = document.querySelector('.main-carousel');
+  var flkty = new Flickity(elem, {
+    freeScroll: true,
+    contain: false,
+    wrapAround: true,
+    prevNextButtons: false,
+    pageDots: false,
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elem = document.querySelector('.secondary-carousel');
+  var flkty = new Flickity(elem, {
     freeScroll: true,
     contain: false,
     wrapAround: true,

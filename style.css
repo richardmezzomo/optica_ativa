@@ -225,12 +225,14 @@ header p {
   line-height: 130%; /* 2.73rem */
 }
 
-#brands .wrapper .main-carousel {
+#brands .wrapper .main-carousel,
+#brands .wrapper .secondary-carousel {
   width: 100%; /* Defina o tamanho desejado */
   margin: 0 auto;
 }
 
-#brands .wrapper .main-carousel .carousel-cell {
+#brands .wrapper .main-carousel .carousel-cell,
+#brands .wrapper .secondary-carousel .carousel-cell{
   height: 10rem;
   padding: 0 1.6rem;
   display: flex;
@@ -239,7 +241,28 @@ header p {
   text-align: center; /* Centraliza o conteúdo de texto */
 }
 
-#brands .wrapper .main-carousel .carousel-cell img {
+#brands .wrapper .main-carousel .carousel-cell img,
+#brands .wrapper .secondary-carousel .carousel-cell img {
   max-width: 100%;
   height: auto;
+}
+
+#brands .wrapper .button {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+#brands .wrapper .button a {
+  border: solid 1px #606062;
+  padding: .9rem 3.5rem;
+  border-radius: 1000px;
+
+  color: var(--cor-3, #606062);
+  text-align: center;
+  font-family: Sora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 130%;
 }
