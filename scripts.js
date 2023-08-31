@@ -43,5 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
     wrapAround: true,
     prevNextButtons: false,
     pageDots: false,
+    autoPlay: true,
   });
 });

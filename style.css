@@ -6,7 +6,6 @@
 
 :root {
   font-size: 62.5%;
-  --nav-heigth: 6rem;
 }
 
 html {
@@ -17,6 +16,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -55,9 +55,9 @@ header {
   background-position: top;
   width: 100%;
   height: 70rem;
-  margin-top: 30px; /* Altura do cabeçalho */
+  margin-top: 30px; 
   position: relative;
-  z-index: 1; /* Certifique-se de que o conteúdo esteja acima do cabeçalho */
+  z-index: 1; 
 }
 
 #navigation .navigation-mobile {
@@ -81,7 +81,7 @@ header p {
   background-color: transparent;
   padding: 1.8rem 2.5rem;
   display: grid;
-  grid-template-columns: 1fr auto; /* Divide a linha em uma parte flexível e outra auto */
+  grid-template-columns: 1fr auto; 
   align-items: center;
 }
 
@@ -189,7 +189,7 @@ header p {
   font-size: 3rem;
   font-style: normal;
   font-weight: 800;
-  line-height: 150%; /* 4.5rem */
+  line-height: 150%; 
   letter-spacing: 0.24rem;
   padding-top: 45rem;
   max-width: 30.5rem;
@@ -222,12 +222,12 @@ header p {
   font-size: 2.1rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 130%; /* 2.73rem */
+  line-height: 130%;
 }
 
 #brands .wrapper .main-carousel,
 #brands .wrapper .secondary-carousel {
-  width: 100%; /* Defina o tamanho desejado */
+  width: 100%; 
   margin: 0 auto;
 }
 
@@ -236,9 +236,9 @@ header p {
   height: 10rem;
   padding: 0 1.6rem;
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  text-align: center; /* Centraliza o conteúdo de texto */
+  justify-content: center;
+  align-items: center; 
+  text-align: center; 
 }
 
 #brands .wrapper .main-carousel .carousel-cell img,
@@ -296,7 +296,7 @@ header p {
   padding-bottom: 3rem;
 }
 
-#technologie .wrapper .head {
+#technologie .wrapper .content .head {
   color: var(--cor-5, #FFFAFA);
   text-align: justify;
   font-family: Inter;
@@ -351,7 +351,6 @@ padding: .9rem 3.8rem;
 }
 
 #about .wrapper {
-  padding: 3rem 1.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -364,25 +363,69 @@ padding: .9rem 3.8rem;
   font-size: 21px;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%; /* 31.5px */
+  line-height: 150%;
   letter-spacing: 1.68px;
+  padding-top: 3rem;
+}
+
+#about .wrapper .content .head {
+  color: var(--cor-3, #606062);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 1rem;
+}
+
+#about .wrapper .content p {
+  color: var(--cor-3, #606062);
+  text-align: justify;
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; 
+  padding-bottom: .7rem;
+  padding: 0 1.5rem .7rem;
 }
 
 #about .wrapper .about-carousel {
-  width: 100%; /* Defina o tamanho desejado */
+  width: 100%; 
   margin: 0 auto;
+  padding: 3rem 0 6rem;
 }
 
 #about .wrapper .about-carousel .carousel-cell {
   height: 10rem;
   padding: 0 1.6rem;
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  text-align: center; /* Centraliza o conteúdo de texto */
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
 }
 
 #about .wrapper .about-carousel .carousel-cell img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+#about .wrapper .button {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 3rem;
+}
+
+#about .wrapper .button a {
+  border: solid .5px #606062;
+  padding: .9rem 3.5rem;
+  border-radius: 1000px;
+
+  color: var(--cor-3, #606062);
+  text-align: center;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 130%;
 }
