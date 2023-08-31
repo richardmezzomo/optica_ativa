@@ -267,8 +267,8 @@ header p {
   line-height: 130%;
 }
 
-#tecnologie {
-  background-image: url("./assets/images/bg-tecnologie.png");
+#technologie {
+  background-image: url("./assets/images/bg-technologie.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -278,7 +278,7 @@ header p {
 }
 
 
-#tecnologie .wrapper {
+#technologie .wrapper {
   padding: 3rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -286,7 +286,7 @@ header p {
   align-items: center;
 }
 
-#tecnologie .wrapper .header h1 {
+#technologie .wrapper .header h1 {
   color: #FFFAFA;
   font-family: Sora;
   font-size: 2.1rem;
@@ -296,7 +296,7 @@ header p {
   padding-bottom: 3rem;
 }
 
-#tecnologie .wrapper .head {
+#technologie .wrapper .head {
   color: var(--cor-5, #FFFAFA);
   text-align: justify;
   font-family: Inter;
@@ -308,11 +308,11 @@ header p {
   margin-bottom: 1.5rem;
 }
 
-#tecnologie .wrapper .head span {
+#technologie .wrapper .head span {
   font-weight: 600;
 }
 
-#tecnologie .wrapper .content p {
+#technologie .wrapper .content p {
   margin-bottom: 1.5rem;
   color: var(--cor-5, #FFFAFA);
   text-align: justify;
@@ -323,11 +323,11 @@ header p {
   line-height: 120%;
 }
 
-#tecnologie .wrapper .button button {
+#technologie .wrapper .button button {
   padding: 4rem 0;
 }
 
-#tecnologie .wrapper .button a {
+#technologie .wrapper .button a {
 color: #FFFAFA;
 text-align: center;
 font-family: Inter;
@@ -340,7 +340,7 @@ border: 1px solid var(--cor-5, #FFFAFA);
 padding: .9rem 3.8rem;
 }
 
-#tecnologie .wrapper .regulamento {
+#technologie .wrapper .regulamento {
   color: var(--cor-5, #FFFAFA);
   font-family: DM Sans;
   font-size: 1rem;
