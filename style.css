@@ -339,3 +339,40 @@ padding: .9rem 3.8rem;
   line-height: normal;
   text-transform: uppercase;
 }
+
+#about .wrapper {
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .wrapper .header h1 {
+  color: var(--cor-3, #606062);
+  font-family: Sora;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 31.5px */
+  letter-spacing: 1.68px;
+}
+
+#about .wrapper .about-carousel {
+  width: 100%; /* Defina o tamanho desejado */
+  margin: 0 auto;
+}
+
+#about .wrapper .about-carousel .carousel-cell {
+  height: 10rem;
+  padding: 0 1.6rem;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  text-align: center; /* Centraliza o conteúdo de texto */
+}
+
+#about .wrapper .about-carousel .carousel-cell img {
+  max-width: 100%;
+  height: auto;
+}

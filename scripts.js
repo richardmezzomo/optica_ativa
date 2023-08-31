@@ -34,3 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
     pageDots: false,
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elem = document.querySelector('.about-carousel');
+  var flkty = new Flickity(elem, {
+    freeScroll: true,
+    contain: false,
+    wrapAround: true,
+    prevNextButtons: false,
+    pageDots: false,
+  });
+});
