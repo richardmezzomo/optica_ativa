@@ -46,3 +46,14 @@ document.addEventListener('DOMContentLoaded', function() {
     autoPlay: true,
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elem = document.querySelector('.teste-carousel');
+  var flkty = new Flickity(elem, {
+    freeScroll: false,
+    contain: false,
+    wrapAround: false,
+    prevNextButtons: false,
+    pageDots: false,
+  });
+});
