@@ -689,3 +689,90 @@ padding: .9rem 3.8rem;
 #footer .wrapper footer span a {
   color: var(--cor-5, #FFFAFA);
 }
+
+@media (min-width: 770px) {
+  .navigation-mobile {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: flex;
+    justify-content: space-between; /* Isso cria espaço entre os elementos */
+    align-items: center; /* Isso centraliza verticalmente os elementos */
+  }
+  
+  .logo {
+    /* Estilos para a div à esquerda (logo) */
+    flex: 0; /* Impede que a div da logo ocupe todo o espaço disponível */
+    padding: .3rem 0 0 8rem;
+  }
+  
+  .menu-desktop{
+    /* Estilos para a div no meio (menu) */
+    flex: 1; /* Permite que a div do menu ocupe o espaço restante no centro */
+    text-align: center; /* Isso alinhará o conteúdo do menu no centro horizontalmente */
+  }
+
+  .menu-desktop ul {
+    display: inline-flex;
+    gap: 1.5rem;
+  }
+
+  .menu-desktop ul li a {
+    color: var(--cor-5, #FFFAFA);
+    font-family: DM Sans;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+  }
+
+  .menu-desktop ul li a:hover {
+    font-weight: 600;
+  }
+
+  #main-page {
+    background-image: url("./assets/images/bg-main-page-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100vw;
+    height: 70rem;
+    margin-top: 30px; 
+    position: relative;
+    z-index: 1; 
+  }
+
+  #home .wrapper {
+    padding: 0 8rem;
+  }
+
+  #home .wrapper h1 {
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 75px */
+    letter-spacing: .4rem;  
+    max-width: 51.0rem;        
+    padding-top: 15rem;
+  }
+
+  #home .wrapper p {
+    font-family: Inter;
+    font-size: 3rem;
+    max-width: 495px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
