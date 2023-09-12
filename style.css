@@ -237,6 +237,10 @@ header p {
   line-height: 130%;
 }
 
+#brands .wrapper .carousel-desktop {
+  display: none;
+}
+
 #brands .wrapper .main-carousel,
 #brands .wrapper .secondary-carousel {
   width: 100%; 
@@ -711,6 +715,7 @@ padding: .9rem 3.8rem;
     /* Estilos para a div no meio (menu) */
     flex: 1; /* Permite que a div do menu ocupe o espaço restante no centro */
     text-align: center; /* Isso alinhará o conteúdo do menu no centro horizontalmente */
+    padding-right: 20rem;
   }
 
   .menu-desktop ul {
@@ -763,7 +768,57 @@ padding: .9rem 3.8rem;
     max-width: 495px;
   }
 
+  #brands .wrapper .main-carousel,
+  #brands .wrapper .secondary-carousel {
+    display: none;
+  }
 
+  #brands .wrapper .desktop-carousel {
+    display: flex;
+  }
+
+  #brands .wrapper .desktop-carousel .carousel-cell {
+    height: 15rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+  }
+
+  #brands .wrapper .desktop-carousel .carousel-cell img {
+    width: 100%;
+    height: auto;
+  }
+
+  #brands .wrapper .header {
+    margin: 4rem 0;
+  }
+  
+  #brands .wrapper .header p {
+    font-size: 3.6rem;
+  }
+
+  #brands .wrapper .button {
+    margin: 4rem 0;
+  }
+  
+  #brands .wrapper .button a {
+    padding: 1.4rem 2.6rem 1rem 2.7rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #606062 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.3s, color 0.3s;
+  }
+
+  #brands .wrapper .button button a:hover {
+    background-position: left bottom;
+    color: white;
+  }
+
+  
 
 
 

@@ -31,9 +31,6 @@ window.addEventListener('scroll', () => {
   lastScrollTop = scrollTop;
 });
 
-
-
-
 openMenuButton.addEventListener('click', () => {
   openMenuButton.classList.toggle('open');
   menuNavigation.classList.toggle('show');
@@ -45,6 +42,17 @@ function closeMenu() {
   menuNavigation.classList.remove('open');
   menuNavigation.classList.toggle('show');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elem = document.querySelector('.desktop-carousel');
+  var flkty = new Flickity(elem, {
+    freeScroll: true,
+    contain: false,
+    wrapAround: true,
+    prevNextButtons: false,
+    pageDots: false,
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   var elem = document.querySelector('.main-carousel');
