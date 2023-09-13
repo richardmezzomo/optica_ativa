@@ -911,7 +911,18 @@ padding: .9rem 3.8rem;
     border-radius: 2rem;
   
     font-size: 2rem;
+    background-image: linear-gradient(to right, #606062 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.3s, color 0.3s;
   }
+
+  #about .wrapper .button button a:hover {
+    background-position: left bottom;
+    color: white;
+  }
+
+  
 
 
 
