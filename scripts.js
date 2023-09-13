@@ -17,13 +17,10 @@ const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
   const scrollTop = window.scrollY;
 
-  // Verifica a direção do scroll
   if (scrollTop > lastScrollTop) {
-    // Rolagem para baixo
     header.classList.add('header-hidden');
     navigation.classList.add('navigation-mobile-hidden');
   } else {
-    // Rolagem para cima
     header.classList.remove('header-hidden');
     navigation.classList.remove('navigation-mobile-hidden');
   }

@@ -865,6 +865,53 @@ padding: .9rem 3.8rem;
     text-transform: uppercase;
   }
 
+  #about .wrapper {
+    padding: 8rem 0;
+  }
+
+  #about .wrapper .header h1 {  
+    font-size: 4rem;
+    padding: 0;
+  }
+
+  #about .wrapper .content .head {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 4rem 0 2rem;
+  }
+
+  #about .wrapper .content p {
+    max-width: 97.2rem;
+    font-size: 2.1rem;
+    padding: .8rem 0 0;
+  }
+
+  #about .wrapper .about-carousel {
+    width: 100%; 
+    margin: 0 auto;
+    padding: 8rem 0;
+  }
+  
+  #about .wrapper .about-carousel .carousel-cell {
+    height: 28rem;
+    padding: 0 1.6rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+  
+  #about .wrapper .about-carousel .carousel-cell img {
+    width: 265px;
+    height: 265px;
+  }
+  
+  #about .wrapper .button a {
+    padding: 1.4rem 2.6rem 1.0rem 2.7rem;
+    border-radius: 2rem;
+  
+    font-size: 2rem;
+  }
 
 
 
