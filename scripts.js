@@ -86,7 +86,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  var elem = document.querySelector('.teste-carousel');
+  var elem = document.querySelector('.carousel-mobile');
+  var flkty = new Flickity(elem, {
+    freeScroll: false,
+    contain: false,
+    wrapAround: false,
+    prevNextButtons: false,
+    pageDots: false,
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elem = document.querySelector('.carousel-desktop');
   var flkty = new Flickity(elem, {
     freeScroll: false,
     contain: false,

@@ -446,25 +446,32 @@ padding: .9rem 3.8rem;
   line-height: 130%;
 }
 
-#carousel .teste-carousel {
+#carousel .carousel-desktop {
+  display: none;
+}
+
+#carousel .carousel-mobile {
   width: 100%; 
   height: 100vh;
 }
 
-#carousel .teste-carousel .carousel-cell .content {
+
+
+#carousel .carousel-mobile .carousel-cell .content {
   padding: 3rem 1.5rem;
 }
 
-#carousel .teste-carousel .carousel-cell .content h1 {
+#carousel .carousel-mobile .carousel-cell .content h1 {
   color: var(--cor-5, #FFFAFA);
   font-family: Sora;
   font-size: 3rem;
   font-style: normal;
   font-weight: 600;
   line-height: 150%; 
+  max-width: 29.3rem;
 }
 
-#carousel .teste-carousel .carousel-cell .content p {
+#carousel .carousel-mobile .carousel-cell .content p {
   color: var(--cor-5, #FFFAFA);
   font-family: Inter;
   font-size: 1.5rem;
@@ -473,7 +480,7 @@ padding: .9rem 3.8rem;
   line-height: normal;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(1) {
+#carousel .carousel-mobile .carousel-cell:nth-child(1) {
   background-image: url("./assets/images/bg-carousel.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -487,50 +494,41 @@ padding: .9rem 3.8rem;
   align-items: flex-start;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(2) {
+#carousel .carousel-mobile .carousel-cell:nth-child(2) {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column; 
   justify-content: center;
   align-items: center; 
+  background-image: url("./assets/images/carousel-img01.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(2) .content h1 {
-  color: var(--cor-3, #606062);
+#carousel .carousel-mobile .carousel-cell:nth-child(2) .content h1 {
+  color: var(--cor-5, #FFFAFA);
   font-family: Sora;
   font-size: 2.1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 3.6rem 2rem 1rem;
+  padding: 3.6rem .5rem 1rem;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(2) .content p {
-  color: var(--cor-3, #606062);
+#carousel .carousel-mobile .carousel-cell:nth-child(2) .content p {
+  color: var(--cor-5, #FFFAFA);
   text-align: justify;
   font-family: Inter;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  padding: 0 2rem .8rem;
+  padding: 0 .5rem .8rem;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(2) .images {
-  display: flex;
-  justify-content: center;
-  margin-top: 2.4rem;
-  gap: .3rem;
-}
-
-#carousel .teste-carousel .carousel-cell:nth-child(2) .images img {
-  width: 110px;
-  height: 101px;
-  border-radius: 1px;
-}
-
-#carousel .teste-carousel .carousel-cell:nth-child(3) {
+#carousel .carousel-mobile .carousel-cell:nth-child(3) {
   height: 100%;
   width: 100%;
   display: flex;
@@ -539,17 +537,17 @@ padding: .9rem 3.8rem;
   align-items: center;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(3) .content h1 {
+#carousel .carousel-mobile .carousel-cell:nth-child(3) .content h1 {
   color: var(--cor-3, #606062);
   font-family: Sora;
   font-size: 2.1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 3.6rem 2rem 1rem;
+  padding: 3.6rem .5rem 1rem;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(3) .content p {
+#carousel .carousel-mobile .carousel-cell:nth-child(3) .content p {
   color: var(--cor-3, #606062);
   text-align: justify;
   font-family: Inter;
@@ -557,16 +555,63 @@ padding: .9rem 3.8rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  padding: 0 2rem .8rem;
+  padding: 0 .5rem .8rem;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(3) .labs {
+#carousel .carousel-mobile .carousel-cell:nth-child(3) .labs {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  margin-top: 3.2rem;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(4) {
+#carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img:nth-child(3),
+#carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img:nth-child(4) {
+  justify-self: flex-end;
+  padding-right: 40px;
+}
+
+#carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img:nth-child(1),
+#carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img:nth-child(2) {
+  justify-self: flex-start;
+  padding-left: 40px;
+}
+
+#carousel .carousel-mobile .carousel-cell:nth-child(4) {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/images/bg-facetadora.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#carousel .carousel-mobile .carousel-cell:nth-child(4) .content h1 {
+  color: var(--cor-5, #FFFAFA);
+  font-family: Sora;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 3.6rem .5rem 1rem;
+}
+
+#carousel .carousel-mobile .carousel-cell:nth-child(4) .content p {
+  color: var(--cor-5, #FFFAFA);
+  text-align: justify;
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0 .5rem .8rem;
+}
+
+#carousel .carousel-mobile .carousel-cell:nth-child(5) {
   height: 100%;
   width: 100%;
   display: flex;
@@ -575,17 +620,17 @@ padding: .9rem 3.8rem;
   align-items: center;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(4) .content h1 {
+#carousel .carousel-mobile .carousel-cell:nth-child(5) .content h1 {
   color: var(--cor-3, #606062);
   font-family: Sora;
   font-size: 2.1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 3.6rem 2rem 1rem;
+  padding: 3.6rem .5rem 1rem;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(4) .content p {
+#carousel .carousel-mobile .carousel-cell:nth-child(5) .content p {
   color: var(--cor-3, #606062);
   text-align: justify;
   font-family: Inter;
@@ -593,44 +638,12 @@ padding: .9rem 3.8rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  padding: 0 2rem .8rem;
+  padding: 0 .5rem .8rem;
 }
 
-#carousel .teste-carousel .carousel-cell:nth-child(4) .content .images {
-  display: flex;
-  justify-content: center;
-  margin-top: 2.4rem;
-  gap: .3rem;
-}
-
-#carousel .teste-carousel .carousel-cell:nth-child(5) {
-  height: 100%;
+#carousel .carousel-mobile .carousel-cell:nth-child(5) .content img {
   width: 100%;
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-}
-
-#carousel .teste-carousel .carousel-cell:nth-child(5) .content h1 {
-  color: var(--cor-3, #606062);
-  font-family: Sora;
-  font-size: 2.1rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding: 3.6rem 2rem 1rem;
-}
-
-#carousel .teste-carousel .carousel-cell:nth-child(5) .content p {
-  color: var(--cor-3, #606062);
-  text-align: justify;
-  font-family: Inter;
-  font-size: 1.3rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  padding: 0 2rem .8rem;
+  margin: 2.4rem auto;
 }
 
 #footer {
@@ -922,31 +935,50 @@ padding: .9rem 3.8rem;
     color: white;
   }
 
-  #carousel .teste-carousel {
+  #carousel .carousel-mobile {
+    display: none;
+  }
+
+  #carousel .carousel-desktop {
+    display: block;
     width: 100%; 
     height: 1094px;
   }
 
-  #carousel .teste-carousel .carousel-cell .content {
+  #carousel .carousel-desktop .carousel-cell .content {
     padding: 8rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(1) .content h1 {
+  #carousel .carousel-desktop .carousel-cell:nth-child(1) .content h1 {
     font-size: 3.6rem;
-    max-width: 500px;
+    max-width: 45rem;
+    color: var(--cor-5, #FFFAFA);
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-top: 45rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(1) .content p {
+  #carousel .carousel-desktop .carousel-cell:nth-child(1) .content p {
     font-size: 2.1rem;
+    color: var(--cor-5, #FFFAFA);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(1) {
+  #carousel .carousel-desktop .carousel-cell:nth-child(1) {
     background-image: url("./assets/images/bg-carousel-desktop.png");
-    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
+    height: 100%;
   }
 
-  #carousel .teste-carousel .carousel-cell:nth-child(2) {
+  #carousel .carousel-desktop .carousel-cell:nth-child(2) {
     height: 100%;
     width: 100%;
     display: flex;
@@ -954,31 +986,31 @@ padding: .9rem 3.8rem;
     justify-content: flex-start;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(2) .content h1 {
+  #carousel .carousel-desktop .carousel-cell:nth-child(2) .content h1 {
     font-size: 5rem;
     padding: 0 0 4rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(2) .content p {
+  #carousel .carousel-desktop .carousel-cell:nth-child(2) .content p {
     font-size: 3rem;
     padding: 0 0 .8rem;
     max-width: 97.2rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(2) .images {
+  #carousel .carousel-desktop .carousel-cell:nth-child(2) .images {
     display: flex;
     justify-content: center;
     margin-top: 2.4rem;
     gap: .3rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(2) .images img {
+  #carousel .carousel-desktop .carousel-cell:nth-child(2) .images img {
     width: 349px;
     height: 320px;
     border-radius: 1px;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(3) {
+  #carousel .carousel-desktop .carousel-cell:nth-child(3) {
     height: 100%;
     width: 100%;
     display: flex;
@@ -987,7 +1019,7 @@ padding: .9rem 3.8rem;
     align-items: center;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(3) .content h1 {
+  #carousel .carousel-desktop .carousel-cell:nth-child(3) .content h1 {
     color: var(--cor-3, #606062);
     font-family: Sora;
     font-size: 2.1rem;
@@ -997,7 +1029,7 @@ padding: .9rem 3.8rem;
     padding: 3.6rem 2rem 1rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(3) .content p {
+  #carousel .carousel-desktop .carousel-cell:nth-child(3) .content p {
     color: var(--cor-3, #606062);
     text-align: justify;
     font-family: Inter;
@@ -1008,13 +1040,13 @@ padding: .9rem 3.8rem;
     padding: 0 2rem .8rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(3) .labs {
+  #carousel .carousel-desktop .carousel-cell:nth-child(3) .labs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(4) {
+  #carousel .carousel-desktop .carousel-cell:nth-child(4) {
     height: 100%;
     width: 100%;
     display: flex;
@@ -1023,7 +1055,7 @@ padding: .9rem 3.8rem;
     align-items: center;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(4) .content h1 {
+  #carousel .carousel-desktop .carousel-cell:nth-child(4) .content h1 {
     color: var(--cor-3, #606062);
     font-family: Sora;
     font-size: 2.1rem;
@@ -1033,7 +1065,7 @@ padding: .9rem 3.8rem;
     padding: 3.6rem 2rem 1rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(4) .content p {
+  #carousel .carousel-desktop .carousel-cell:nth-child(4) .content p {
     color: var(--cor-3, #606062);
     text-align: justify;
     font-family: Inter;
@@ -1044,14 +1076,14 @@ padding: .9rem 3.8rem;
     padding: 0 2rem .8rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(4) .content .images {
+  #carousel .carousel-desktop .carousel-cell:nth-child(4) .content .images {
     display: flex;
     justify-content: center;
     margin-top: 2.4rem;
     gap: .3rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(5) {
+  #carousel .carousel-desktop .carousel-cell:nth-child(5) {
     height: 100%;
     width: 100%;
     display: flex;
@@ -1060,7 +1092,7 @@ padding: .9rem 3.8rem;
     align-items: center;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(5) .content h1 {
+  #carousel .carousel-desktop .carousel-cell:nth-child(5) .content h1 {
     color: var(--cor-3, #606062);
     font-family: Sora;
     font-size: 2.1rem;
@@ -1070,7 +1102,7 @@ padding: .9rem 3.8rem;
     padding: 3.6rem 2rem 1rem;
   }
   
-  #carousel .teste-carousel .carousel-cell:nth-child(5) .content p {
+  #carousel .carousel-desktop .carousel-cell:nth-child(5) .content p {
     color: var(--cor-3, #606062);
     text-align: justify;
     font-family: Inter;
