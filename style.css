@@ -455,8 +455,6 @@ padding: .9rem 3.8rem;
   height: 100vh;
 }
 
-
-
 #carousel .carousel-mobile .carousel-cell .content {
   padding: 3rem 1.5rem;
 }
@@ -563,6 +561,10 @@ padding: .9rem 3.8rem;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   margin-top: 3.2rem;
+}
+
+#carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img {
+  width: 20rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img:nth-child(3),
@@ -1095,10 +1097,6 @@ padding: .9rem 3.8rem;
     line-height: normal;
 
     padding: 0 8rem;
-  }
-  
-  #carousel .carousel-desktop .carousel-cell:nth-child(4) .content .images {
-    
   }
 
   #carousel .carousel-desktop .carousel-cell:nth-child(4) .content .images img {
