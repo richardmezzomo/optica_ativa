@@ -1,6 +1,8 @@
 const openMenuButton = document.querySelector('.open-menu');
 const menuNavigation = document.querySelector('.menu-navigation');
 const navigation = document.querySelector('.navigation-mobile');
+let lastScrollTop = 0;
+const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
@@ -9,10 +11,6 @@ window.addEventListener('scroll', () => {
     navigation.classList.remove('navigation--scroll');
   }
 });
-
-
-let lastScrollTop = 0;
-const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
   const scrollTop = window.scrollY;
@@ -41,10 +39,10 @@ function closeMenu() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  var elem = document.querySelector('.desktop-carousel');
+  var elem = document.querySelector('.tertiary-carousel');
   var flkty = new Flickity(elem, {
     freeScroll: true,
-    contain: false,
+    contain: true,
     wrapAround: true,
     prevNextButtons: false,
     pageDots: false,

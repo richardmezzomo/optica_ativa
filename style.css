@@ -6,6 +6,10 @@
 
 :root {
   font-size: 62.5%;
+
+  --grey-200: hsl(240, 1%, 38%);
+  --white-100: hsl(0, 100%, 99%);
+  --black: hsl(0, 10%, 10%);
 }
 
 html {
@@ -16,12 +20,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-size: 16px;
-}
-
-body {
-  font-size: 1.6rem;
-  background-color: #F4EEF7;
 }
 
 button {
@@ -43,7 +41,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--cor-3, #606062);
+  background: var(--grey-200, hsl(240, 1%, 38%));
   padding: 1.1rem 0 .7rem;
   z-index: 2;
   transition: transform 0.3s; /* Adiciona uma transição suave na propriedade transform */
@@ -65,13 +63,13 @@ header {
   background-position: top;
   width: 100%;
   height: 70rem;
-  margin-top: 30px; 
+  margin-top: 3rem; 
   position: relative;
   z-index: 1; 
 }
 
 header p {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   text-align: center;
   font-family: Inter;
   font-size: 1rem;
@@ -93,8 +91,8 @@ header p {
 }
 
 .navigation--scroll {
-  background-color: var(--cor-3, #000000);
-  opacity: 0.6;
+  background-color: var(--black, hsl(0, 10%, 10%));
+  opacity: 0.9;
 }
 
 #navigation .navigation-mobile .logo {
@@ -124,12 +122,12 @@ header p {
 
 .open-menu .bar {
   display: block;
-  width: 25px;
-  height: 1px;
-  background-color: white;
-  margin: 7px 0;
+  width: 2.5rem;
+  height: .1rem;
+  background-color: var(--white-100, hsl(0, 100%, 99%));
+  margin: .7rem 0;
   transition: 0.4s;
-  border-radius: 10px;
+  border-radius: .1rem;
 }
 
 .nav-desktop {
@@ -143,7 +141,7 @@ header p {
   height: 100%;
   transition: right 0.3s ease;
   padding-top: 2.5rem;
-  background: black; 
+  background: var(--black, hsl(0, 10%, 10%)); 
   z-index: 10;
 }
 
@@ -155,7 +153,7 @@ header p {
 }
 
 .menu-navigation .btns-menu .open-menu span {
-  color: #FFFAFA;
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: Inter;
   font-size: 2rem;
   font-style: normal;
@@ -171,7 +169,7 @@ header p {
 }
 
 .menu-navigation ul li a {
-  color: #FFFAFA;
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: Inter;
   font-size: 2rem;
   font-style: normal;
@@ -196,7 +194,7 @@ header p {
 }
 
 #home .wrapper h1 {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: Sora;
   font-size: 3rem;
   font-style: normal;
@@ -208,7 +206,7 @@ header p {
 }
 
 #home .wrapper p {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   text-align: justify;
   font-family: Inter;
   font-size: 1.5rem;
@@ -229,7 +227,7 @@ header p {
 }
 
 #brands .wrapper .header p {
-  color: var(--cor-3, #606062);
+  color: var(--grey-200, hsl(240, 1%, 38%));
   font-family: Sora;
   font-size: 2.1rem;
   font-style: normal;
@@ -237,7 +235,7 @@ header p {
   line-height: 130%;
 }
 
-#brands .wrapper .desktop-carousel {
+#brands .wrapper .tertiary-carousel {
   display: none;
 }
 
@@ -270,11 +268,11 @@ header p {
 }
 
 #brands .wrapper .button a {
-  border: solid .5px #606062;
+  border: solid .5px var(--grey-200, hsl(240, 1%, 38%));
   padding: .9rem 3.5rem;
-  border-radius: 1000px;
+  border-radius: 100rem;
 
-  color: var(--cor-3, #606062);
+  color: var(--grey-200, hsl(240, 1%, 38%));
   text-align: center;
   font-family: Sora;
   font-size: 1.8rem;
@@ -303,7 +301,7 @@ header p {
 }
 
 #technologie .wrapper .header h1 {
-  color: #FFFAFA;
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: Sora;
   font-size: 2.1rem;
   font-style: normal;
@@ -313,14 +311,14 @@ header p {
 }
 
 #technologie .wrapper .content .head {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   text-align: justify;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
-  letter-spacing: 0.3px;
+  letter-spacing: .3px;
   margin-bottom: 1.5rem;
 }
 
@@ -330,7 +328,7 @@ header p {
 
 #technologie .wrapper .content p {
   margin-bottom: 1.5rem;
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   text-align: justify;
   font-family: Inter;
   font-size: 1.3rem;
@@ -344,7 +342,7 @@ header p {
 }
 
 #technologie .wrapper .button a {
-color: #FFFAFA;
+color: var(--white-100, hsl(0, 100%, 99%));
 text-align: center;
 font-family: Inter;
 font-size: 1.8rem;
@@ -352,12 +350,12 @@ font-style: normal;
 font-weight: 100;
 line-height: 130%;
 border-radius: 2rem;
-border: 1px solid var(--cor-5, #FFFAFA);
+border: 1px solid var(--white-100, hsl(0, 100%, 99%));
 padding: .9rem 3.8rem;
 }
 
 #technologie .wrapper .regulamento {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: DM Sans;
   font-size: 1rem;
   font-style: normal;
@@ -374,9 +372,9 @@ padding: .9rem 3.8rem;
 }
 
 #about .wrapper .header h1 {
-  color: var(--cor-3, #606062);
+  color: var(--grey-200, hsl(240, 1%, 38%));
   font-family: Sora;
-  font-size: 21px;
+  font-size: 2.1rem;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -385,17 +383,17 @@ padding: .9rem 3.8rem;
 }
 
 #about .wrapper .content .head {
-  color: var(--cor-3, #606062);
+  color: var(--grey-200, hsl(240, 1%, 38%));
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  padding-top: 1rem;
+  padding-top: 1rem; 
 }
 
 #about .wrapper .content p {
-  color: var(--cor-3, #606062);
+  color: var(--grey-200, hsl(240, 1%, 38%));
   text-align: justify;
   font-family: Inter;
   font-size: 1.3rem;
@@ -433,11 +431,11 @@ padding: .9rem 3.8rem;
 }
 
 #about .wrapper .button a {
-  border: solid .5px #606062;
+  border: solid .5px var(--grey-200, hsl(240, 1%, 38%));
   padding: .9rem 3.5rem;
   border-radius: 1000px;
 
-  color: var(--cor-3, #606062);
+  color: var(--grey-200, hsl(240, 1%, 38%));
   text-align: center;
   font-family: Sora;
   font-size: 1.8rem;
@@ -460,7 +458,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell .content h1 {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: Sora;
   font-size: 3rem;
   font-style: normal;
@@ -470,7 +468,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell .content p {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -506,7 +504,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(2) .content h1 {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: Sora;
   font-size: 2.1rem;
   font-style: normal;
@@ -516,7 +514,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(2) .content p {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   text-align: justify;
   font-family: Inter;
   font-size: 1.3rem;
@@ -536,7 +534,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(3) .content h1 {
-  color: var(--cor-3, #606062);
+  color: var(--grey-200, hsl(240, 1%, 38%));
   font-family: Sora;
   font-size: 2.1rem;
   font-style: normal;
@@ -546,7 +544,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(3) .content p {
-  color: var(--cor-3, #606062);
+  color: var(--grey-200, hsl(240, 1%, 38%));
   text-align: justify;
   font-family: Inter;
   font-size: 1.3rem;
@@ -570,13 +568,13 @@ padding: .9rem 3.8rem;
 #carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img:nth-child(3),
 #carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img:nth-child(4) {
   justify-self: flex-end;
-  padding-right: 40px;
+  padding-right: 4rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img:nth-child(1),
 #carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img:nth-child(2) {
   justify-self: flex-start;
-  padding-left: 40px;
+  padding-left: 4rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(4) {
@@ -593,7 +591,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(4) .content h1 {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: Sora;
   font-size: 2.1rem;
   font-style: normal;
@@ -603,7 +601,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(4) .content p {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   text-align: justify;
   font-family: Inter;
   font-size: 1.3rem;
@@ -623,7 +621,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(5) .content h1 {
-  color: var(--cor-3, #606062);
+  color: var(--grey-200, hsl(240, 1%, 38%));
   font-family: Sora;
   font-size: 2.1rem;
   font-style: normal;
@@ -633,7 +631,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(5) .content p {
-  color: var(--cor-3, #606062);
+  color: var(--grey-200, hsl(240, 1%, 38%));
   text-align: justify;
   font-family: Inter;
   font-size: 1.3rem;
@@ -649,7 +647,7 @@ padding: .9rem 3.8rem;
 }
 
 #footer {
-  background: var(--cor-3, #606062);
+  background: var(--grey-200, hsl(240, 1%, 38%));
 }
 
 #footer .wrapper {
@@ -663,7 +661,7 @@ padding: .9rem 3.8rem;
 
 #footer .wrapper h1 {
   text-align: center;
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   text-align: center;
   font-family: Sora;
   font-size: 2.5rem;
@@ -688,7 +686,7 @@ padding: .9rem 3.8rem;
 }
 
 #footer .wrapper footer p {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -697,7 +695,7 @@ padding: .9rem 3.8rem;
 }
 
 #footer .wrapper footer span {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
   font-family: Inter;
   font-size: 1.2rem;
   font-style: normal;
@@ -706,10 +704,10 @@ padding: .9rem 3.8rem;
 }
 
 #footer .wrapper footer span a {
-  color: var(--cor-5, #FFFAFA);
+  color: var(--white-100, hsl(0, 100%, 99%));
 }
 
-@media (min-width: 770px) {
+@media (min-width: 1000px) {
   .navigation-mobile {
     display: none;
   }
@@ -739,7 +737,7 @@ padding: .9rem 3.8rem;
   }
 
   .menu-desktop ul li a {
-    color: var(--cor-5, #FFFAFA);
+    color: var(--white-100, hsl(0, 100%, 99%));
     font-family: DM Sans;
     font-size: 1.8rem;
     font-style: normal;
@@ -757,7 +755,7 @@ padding: .9rem 3.8rem;
     background-size: cover;
     background-position: top;
     height: 76.8rem;
-    margin-top: 30px; 
+    margin-top: 3rem; 
     position: relative;
     z-index: 1; 
   }
@@ -787,21 +785,21 @@ padding: .9rem 3.8rem;
     display: none;
   }
 
-  #brands .wrapper .desktop-carousel {
-    display: inline-block;
+  #brands .wrapper .tertiary-carousel {
+    display: inline;
   }
 
-  #brands .wrapper .desktop-carousel .carousel-cell {
+  #brands .wrapper .tertiary-carousel .carousel-cell{
     height: 15rem;
-    padding: 0 2rem;
+    padding: 0 2.6rem;
     display: flex;
     justify-content: center;
     align-items: center; 
     text-align: center; 
   }
 
-  #brands .wrapper .desktop-carousel .carousel-cell img {
-    width: 100%;
+  #brands .wrapper .tertiary-carousel .carousel-cell img {
+    max-width: 100%;
     height: auto;
   }
 
@@ -829,7 +827,7 @@ padding: .9rem 3.8rem;
 
   #brands .wrapper .button button a:hover {
     background-position: left bottom;
-    color: white;
+    color: var(--white-100, hsl(0, 100%, 99%));
   }
 
   #technologie {
@@ -861,7 +859,7 @@ padding: .9rem 3.8rem;
     text-align: justify;
     font-size: 2.1rem;
     line-height: 120%; 
-    padding-bottom: 5px;
+    padding-bottom: .5rem;
   }
 
   #technologie .wrapper  .content span {
@@ -869,7 +867,7 @@ padding: .9rem 3.8rem;
   }
 
   #technologie .wrapper .button button a {
-    padding: 14px 34px 10px 35px;
+    padding: 1.4rem 3.4rem 1rem 3.5rem;
     border-radius: 2rem;
     font-size: 2rem;
     font-weight: 100;
@@ -917,8 +915,8 @@ padding: .9rem 3.8rem;
   }
   
   #about .wrapper .about-carousel .carousel-cell img {
-    width: 265px;
-    height: 265px;
+    width: 26.5rem;
+    height: 26.5rem;
   }
   
   #about .wrapper .button a {
@@ -934,7 +932,7 @@ padding: .9rem 3.8rem;
 
   #about .wrapper .button button a:hover {
     background-position: left bottom;
-    color: white;
+    color: var(--white-100, hsl(0, 100%, 99%));
   }
 
   #carousel .carousel-mobile {
@@ -944,7 +942,7 @@ padding: .9rem 3.8rem;
   #carousel .carousel-desktop {
     display: block;
     width: 100%; 
-    height: 768px;
+    height: 76.8rem;
   }
 
   #carousel .carousel-desktop .carousel-cell .content {
@@ -954,7 +952,7 @@ padding: .9rem 3.8rem;
   #carousel .carousel-desktop .carousel-cell:nth-child(1) .content h1 {
     font-size: 3.6rem;
     max-width: 45rem;
-    color: var(--cor-5, #FFFAFA);
+    color: var(--white-100, hsl(0, 100%, 99%));
     font-family: Sora;
     font-style: normal;
     font-weight: 600;
@@ -964,7 +962,7 @@ padding: .9rem 3.8rem;
   
   #carousel .carousel-desktop .carousel-cell:nth-child(1) .content p {
     font-size: 2.1rem;
-    color: var(--cor-5, #FFFAFA);
+    color: var(--white-100, hsl(0, 100%, 99%));
     font-family: Inter;
     font-style: normal;
     font-weight: 300;
@@ -993,7 +991,7 @@ padding: .9rem 3.8rem;
     justify-content: space-between;
     gap: 8rem;
     padding: 0;
-    background: var(--cor-3, #606062);
+    background: var(--grey-200, hsl(240, 1%, 38%));
   }
 
   #carousel .carousel-desktop .carousel-cell:nth-child(2) .content .wrap {
@@ -1005,7 +1003,7 @@ padding: .9rem 3.8rem;
   }
   
   #carousel .carousel-desktop .carousel-cell:nth-child(2) .content h1 {
-    color: var(--cor-5, #FFFAFA);
+    color: var(--white-100, hsl(0, 100%, 99%));
     font-family: Sora;
     font-style: normal;
     font-weight: 600;
@@ -1015,7 +1013,7 @@ padding: .9rem 3.8rem;
   }
   
   #carousel .carousel-desktop .carousel-cell:nth-child(2) .content p {
-    color: var(--cor-5, #FFFAFA);
+    color: var(--white-100, hsl(0, 100%, 99%));
     text-align: justify;
     font-family: Inter;
     font-style: normal;
@@ -1039,7 +1037,7 @@ padding: .9rem 3.8rem;
   }
 
   #carousel .carousel-desktop .carousel-cell:nth-child(3) .wrap h1 {
-    color: var(--cor-3, #606062);
+    color: var(--grey-200, hsl(240, 1%, 38%));
     font-family: Sora;
     font-size: 3.6rem;
     font-style: normal;
@@ -1049,7 +1047,7 @@ padding: .9rem 3.8rem;
   }
 
   #carousel .carousel-desktop .carousel-cell:nth-child(3) .wrap p {
-    color: var(--cor-3, #606062);
+    color: var(--grey-200, hsl(240, 1%, 38%));
     text-align: justify;
     font-family: Inter;
     font-size: 2.5rem;
@@ -1066,7 +1064,7 @@ padding: .9rem 3.8rem;
   
   #carousel .carousel-desktop .carousel-cell:nth-child(4) {
     height: 100%;
-    background-color: var(--cor-3, #606062);
+    background-color: var(--grey-200, hsl(240, 1%, 38%));
   }
 
   #carousel .carousel-desktop .carousel-cell:nth-child(4) .content {
@@ -1077,7 +1075,7 @@ padding: .9rem 3.8rem;
   }
   
   #carousel .carousel-desktop .carousel-cell:nth-child(4) .content h1 {
-    color: var(--cor-5, #FFFAFA);
+    color: var(--white-100, hsl(0, 100%, 99%));
     font-family: Sora;
     font-size: 3.6rem;
     font-style: normal;
@@ -1088,10 +1086,10 @@ padding: .9rem 3.8rem;
   }
   
   #carousel .carousel-desktop .carousel-cell:nth-child(4) .content p {
-    color: var(--cor-5, #FFFAFA);
+    color: var(--white-100, hsl(0, 100%, 99%));
     text-align: justify;
     font-family: Inter;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -1100,7 +1098,7 @@ padding: .9rem 3.8rem;
   }
 
   #carousel .carousel-desktop .carousel-cell:nth-child(4) .content .images img {
-    width: 534px;
+    width: 53.4rem;
     height: 100%;
   }
 
@@ -1116,7 +1114,7 @@ padding: .9rem 3.8rem;
   }
   
   #carousel .carousel-desktop .carousel-cell:nth-child(5) .content h1 {
-    color: var(--cor-3, #606062);
+    color: var(--grey-200, hsl(240, 1%, 38%));
     font-family: Sora;
     font-size: 3.6rem;
     font-style: normal;
@@ -1126,10 +1124,10 @@ padding: .9rem 3.8rem;
   }
   
   #carousel .carousel-desktop .carousel-cell:nth-child(5) .content p {
-    color: var(--cor-3, #606062);
+    color: var(--grey-200, hsl(240, 1%, 38%));
     text-align: justify;
     font-family: Inter;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
