@@ -2,7 +2,20 @@ const openMenuButton = document.querySelector('.open-menu');
 const menuNavigation = document.querySelector('.menu-navigation');
 const navigation = document.querySelector('.navigation-mobile');
 let lastScrollTop = 0;
-const header = document.querySelector('header');
+
+document.addEventListener("DOMContentLoaded", function () {
+  const textElement = document.getElementById("text");
+  const originalText = textElement.textContent;
+  const newText = "Óculos prontos em até 30 minutos";
+  let isOriginalText = true;
+
+  function toggleText() {
+    textElement.textContent = isOriginalText ? newText : originalText;
+    isOriginalText = !isOriginalText;
+  }
+
+  setInterval(toggleText, 3000); // Toggle every 3 seconds (adjust as needed)
+});
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
@@ -10,20 +23,6 @@ window.addEventListener('scroll', () => {
   } else {
     navigation.classList.remove('navigation--scroll');
   }
-});
-
-window.addEventListener('scroll', () => {
-  const scrollTop = window.scrollY;
-
-  if (scrollTop > lastScrollTop) {
-    header.classList.add('header-hidden');
-    navigation.classList.add('navigation-mobile-hidden');
-  } else {
-    header.classList.remove('header-hidden');
-    navigation.classList.remove('navigation-mobile-hidden');
-  }
-
-  lastScrollTop = scrollTop;
 });
 
 openMenuButton.addEventListener('click', () => {

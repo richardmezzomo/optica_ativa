@@ -42,18 +42,18 @@ header {
   left: 0;
   width: 100%;
   background: var(--grey-200, hsl(240, 1%, 38%));
-  padding: 1.1rem 0 .7rem;
+  padding: 1rem 0;
   z-index: 2;
-  transition: transform 0.3s; /* Adiciona uma transição suave na propriedade transform */
-  transform: translateY(0); /* Começa com translateY(0) para que o cabeçalho seja visível */
 }
 
-.header-hidden {
-  transform: translateY(-100%); /* Move o cabeçalho para cima, fora da tela */
-}
-
-.navigation-mobile-hidden {
-  transform: translateY(-150%); /* Move o cabeçalho para cima, fora da tela */
+header p {
+  color: var(--white-100, #FFFAFA);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #main-page {
@@ -68,20 +68,9 @@ header {
   z-index: 1; 
 }
 
-header p {
-  color: var(--white-100, hsl(0, 100%, 99%));
-  text-align: center;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .navigation-mobile {
   position: fixed;
   width: 100vw;
-  padding-top: 1.8rem;
   background-color: transparent;
   padding: 1.8rem 2.5rem;
   display: grid;
@@ -91,8 +80,8 @@ header p {
 }
 
 .navigation--scroll {
-  background-color: var(--black, hsl(0, 10%, 10%));
-  opacity: 0.9;
+  backdrop-filter: blur(5px) brightness(1.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com transparência */
 }
 
 #navigation .navigation-mobile .logo {
@@ -562,7 +551,7 @@ padding: .9rem 3.8rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img {
-  width: 20rem;
+  width: 15rem;
 }
 
 #carousel .carousel-mobile .carousel-cell:nth-child(3) .labs img:nth-child(3),
@@ -668,6 +657,7 @@ padding: .9rem 3.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  max-width: 34.5rem;
 }
 
 #footer .wrapper .social-links {
@@ -708,6 +698,14 @@ padding: .9rem 3.8rem;
 }
 
 @media (min-width: 1000px) {
+  header p {
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
   .navigation-mobile {
     display: none;
   }
@@ -754,7 +752,6 @@ padding: .9rem 3.8rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 76.8rem;
     margin-top: 3rem; 
     position: relative;
     z-index: 1; 
@@ -771,7 +768,7 @@ padding: .9rem 3.8rem;
     line-height: 150%; /* 75px */
     letter-spacing: .4rem;  
     max-width: 38.4rem;        
-    padding-top: 15rem;
+    padding-top: 32rem;
   }
 
   #home .wrapper p {
@@ -816,7 +813,7 @@ padding: .9rem 3.8rem;
   }
   
   #brands .wrapper .button a {
-    padding: 1.4rem 2.6rem 1rem 2.7rem;
+    padding: 1.2rem 2.7rem;
     border-radius: 2rem;
     font-size: 2rem;
     background-image: linear-gradient(to right, #606062 50%, transparent 50%);
@@ -867,7 +864,7 @@ padding: .9rem 3.8rem;
   }
 
   #technologie .wrapper .button button a {
-    padding: 1.4rem 3.4rem 1rem 3.5rem;
+    padding: 1.2rem 3.4rem;
     border-radius: 2rem;
     font-size: 2rem;
     font-weight: 100;
@@ -920,7 +917,7 @@ padding: .9rem 3.8rem;
   }
   
   #about .wrapper .button a {
-    padding: 1.4rem 2.6rem 1.0rem 2.7rem;
+    padding: 1.2rem 2.7rem;
     border-radius: 2rem;
   
     font-size: 2rem;
@@ -951,7 +948,7 @@ padding: .9rem 3.8rem;
   
   #carousel .carousel-desktop .carousel-cell:nth-child(1) .content h1 {
     font-size: 3.6rem;
-    max-width: 45rem;
+    max-width: 41rem;
     color: var(--white-100, hsl(0, 100%, 99%));
     font-family: Sora;
     font-style: normal;
