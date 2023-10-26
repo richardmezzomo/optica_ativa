@@ -77,11 +77,13 @@ header p {
   grid-template-columns: 1fr auto; 
   align-items: center;
   transition: transform 0.3s; /* Adiciona uma transição suave na propriedade transform */
+  top: 1;
 }
 
 .navigation--scroll {
   backdrop-filter: blur(5px) brightness(1.5);
-    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com transparência */
+  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com transparência */
+
 }
 
 #navigation .navigation-mobile .logo {
@@ -130,7 +132,7 @@ header p {
   height: 100%;
   transition: right 0.3s ease;
   padding-top: 2.5rem;
-  background: var(--black, hsl(0, 10%, 10%)); 
+  background: var(--black); 
   z-index: 10;
 }
 
@@ -351,6 +353,10 @@ padding: .9rem 3.8rem;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+}
+
+#about {
+  padding-top: 90px;
 }
 
 #about .wrapper {
